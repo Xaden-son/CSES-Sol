@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void    take_int(long long n)
+void    solution(long long n)
 {
-	if(n != 1)
+	if (n != 1)
 		cout << n << " ";
     if (n == 1)
 	{
@@ -13,11 +13,11 @@ void    take_int(long long n)
 	if (!((n % 2) == 0))
 	{
 		n = (n * 3) + 1;
-		take_int(n);
+		solution(n);
 	}else
 	{
 		n = n / 2;
-		take_int(n);
+		solution(n);
 	}
 }
 
@@ -26,7 +26,6 @@ int main(void)
 	long long n;
 	cin >> n;
 
-	if (1 <= n && n <= 1000000)
-		take_int(n);
+    solution(n);
     return (0);
 }

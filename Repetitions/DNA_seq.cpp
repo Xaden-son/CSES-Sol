@@ -51,17 +51,12 @@ int main(void)
 {
 	string str;
 	int longest_rep;
-	int n;
 
-	cin >> str;
-	n = str.size();
-	if (1 <= n && n <= 1000000)
-	{
+	getline(cin, str);
 		if (is_dna_char(str))
 		{
 			longest_rep = calculate_longest_rep(str);
 			cout << longest_rep << endl;
 		}
-	}
 	return (0);
 }
